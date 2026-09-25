@@ -1,15 +1,16 @@
 # close-1 状況
-更新: 09-26 06:47 JST
+更新: 09-26 06:52 JST
 
 ## 現在
-- 審判: 最新 n=117（予定 09-26 06:45 JST、遅れ 13秒）、今の n=117、参照価格 225.28、登録済み owner 総数 815323（n=117）
+- 審判: 最新 n=118（予定 09-26 06:50 JST、遅れ 15秒）、今の n=118、参照価格 225.24、登録済み owner 総数 816637（n=118）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
-- Issue/PR: 期間内の更新 8件（未解決 4）、コメント 12件
-- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
+- Issue/PR: 期間内の更新 9件（未解決 5）、コメント 12件
+- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=117 区間1 ref=225.28 残りの脚 0 → 今回 0件（上限 1188）
+- tree.py: 実行中、確定した取引 8243件。最新: n=118 区間1 ref=225.24 残りの脚 0 → 今回 0件（上限 1188）
 
 ## 最近の要確認（新しい順）
+- 09-26 06:52 JST 新しい Issue #9: Reference price frozen for 29 sweeps (22–50): ref stayed at 225.03 (13:49:57Z) while xyz:NVDA traded 223.34–225.71; 3,527 trades settled against it
 - 09-26 06:31 JST #7 に新しいコメント（toma86hawk）: Confirmed the sweep-85 ranges from the export (thanks @kivica). One thing I tested before relying on them, in case it saves someone the same step: **the ranges are not predictable from the flow post alone.**
 - 09-26 06:10 JST 取引2の部屋に自分以外の書き込み 1件
 - 09-26 06:00 JST 取引1の部屋に自分以外の書き込み 1件
