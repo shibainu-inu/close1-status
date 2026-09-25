@@ -1,13 +1,13 @@
 # close-1 状況
-更新: 09-26 06:41 JST
+更新: 09-26 06:47 JST
 
 ## 現在
-- 審判: 最新 n=116（予定 09-26 06:40 JST、遅れ 14秒）、今の n=116、参照価格 225.19、登録済み owner 総数 812699（n=116）
+- 審判: 最新 n=117（予定 09-26 06:45 JST、遅れ 13秒）、今の n=117、参照価格 225.28、登録済み owner 総数 815323（n=117）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
 - Issue/PR: 期間内の更新 8件（未解決 4）、コメント 12件
-- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
+- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=116 区間1 ref=225.19 残りの脚 0 → 今回 0件（上限 1188）
+- tree.py: 実行中、確定した取引 8243件。最新: n=117 区間1 ref=225.28 残りの脚 0 → 今回 0件（上限 1188）
 
 ## 最近の要確認（新しい順）
 - 09-26 06:31 JST #7 に新しいコメント（toma86hawk）: Confirmed the sweep-85 ranges from the export (thanks @kivica). One thing I tested before relying on them, in case it saves someone the same step: **the ranges are not predictable from the flow post alone.**
