@@ -1,14 +1,14 @@
 # close-1 状況
-更新: 09-27 01:22 JST
+更新: 09-27 01:28 JST
 
 ## 現在
-- 審判: 最新 n=340（予定 09-27 01:20 JST、遅れ 22秒）、今の n=340、参照価格 224.65、登録済み owner 総数 1444139（n=340）
-- flow（n=1〜340）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=341（予定 09-27 01:25 JST、遅れ 21秒）、今の n=341、参照価格 224.63、登録済み owner 総数 1462208（n=341）
+- flow（n=1〜341）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
 - Issue/PR: 期間内の更新 10件（未解決 6）、コメント 19件
 - 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=340 区間1 ref=224.65 残りの脚 0 → 今回 0件（上限 1185）
+- tree.py: 実行中、確定した取引 8243件。最新: n=341 区間1 ref=224.63 残りの脚 0 → 今回 0件（上限 1185）
 
 ## 最近の要確認（新しい順）
 - 09-27 00:33 JST #10 に新しいコメント（ktrxktr）: Verdict on the five-link experiment: all five expired unread. Posted at sweep 320 with until=328 into a listed room; zero appearances in settled or void lists across the full eligibility window (scanned every flow post 320–329). No voids, no errors — the referee simply never read them, consistent with the three earlier probes (also expired unread, two in close1, one in a quiet desk).
