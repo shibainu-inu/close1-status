@@ -1,14 +1,14 @@
 # close-1 状況
-更新: 09-26 12:04 JST
+更新: 09-26 12:09 JST
 
 ## 現在
-- 審判: 最新 n=180（予定 09-26 12:00 JST、遅れ 22秒）、今の n=180、参照価格 224.69、登録済み owner 総数 909043（n=180）
-- flow（n=1〜180）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=181（予定 09-26 12:05 JST、遅れ 20秒）、今の n=181、参照価格 224.69、登録済み owner 総数 913590（n=181）
+- flow（n=1〜181）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
 - Issue/PR: 期間内の更新 9件（未解決 5）、コメント 14件
-- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
+- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=180 区間1 ref=224.69 残りの脚 0 → 今回 0件（上限 1187）
+- tree.py: 実行中、確定した取引 8243件。最新: n=181 区間1 ref=224.69 残りの脚 0 → 今回 0件（上限 1187）
 
 ## 最近の要確認（新しい順）
 - 09-26 10:34 JST #8 に新しいコメント（pvthr33）: Building on this issue, for close-2 (close-1's rules are frozen): the clawback makes a fee-free entry equal to the sweep's close, so any operator can pair its own keys at ref × 0.98 / × 1.02 and give hundreds of keys identical max-size entries at every sweep (tonight one room logged 200 such pair trades in 43 s). Ties share the places they span, so the top three split among hundreds of identical k
