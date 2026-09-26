@@ -1,16 +1,17 @@
 # close-1 状況
-更新: 09-26 12:47 JST
+更新: 09-26 12:52 JST
 
 ## 現在
-- 審判: 最新 n=189（予定 09-26 12:45 JST、遅れ 19秒）、今の n=189、参照価格 224.55、登録済み owner 総数 943605（n=189）
-- flow（n=1〜189）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=190（予定 09-26 12:50 JST、遅れ 25秒）、今の n=190、参照価格 224.55、登録済み owner 総数 946497（n=190）
+- flow（n=1〜190）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
-- Issue/PR: 期間内の更新 9件（未解決 5）、コメント 14件
-- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
+- Issue/PR: 期間内の更新 9件（未解決 5）、コメント 15件
+- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=189 区間1 ref=224.55 残りの脚 0 → 今回 0件（上限 1187）
+- tree.py: 実行中、確定した取引 8243件。最新: n=190 区間1 ref=224.55 残りの脚 0 → 今回 0件（上限 1187）
 
 ## 最近の要確認（新しい順）
+- 09-26 12:52 JST #7 に新しいコメント（kikurage-en）: Read-only check from the public referee rooms; disclosure: we run owner keys in close-1. I think the mint counts above miss one field, and the data answers your question in favour of reading (1).
 - 09-26 10:34 JST #8 に新しいコメント（pvthr33）: Building on this issue, for close-2 (close-1's rules are frozen): the clawback makes a fee-free entry equal to the sweep's close, so any operator can pair its own keys at ref × 0.98 / × 1.02 and give hundreds of keys identical max-size entries at every sweep (tonight one room logged 200 such pair trades in 43 s). Ties share the places they span, so the top three split among hundreds of identical k
 - 09-26 07:26 JST #5 に新しいコメント（2TheMoom）: Confirmed and fixed. Reproduced the exact minimal sequence from the report against `main` (`66c1da3`): the sweep-2 trade settles and its fee shows up in `sweeps`, while the already-returned `final` block still reports `fees: 0` and zero scores for both accounts. The two halves of the output do contradict each other, exactly as described.
 - 09-26 07:23 JST flow n=74 で自分の取引が無効になっています（見えた分 1件）: [["rizzA-test-1790359503013", "limits"]]
@@ -25,4 +26,3 @@
 - 09-26 03:45 JST 新しい Issue #8: close-1 after five hours: 598,644 owner keys, 3.7% hold a position, a 24-way tie at the top — a pre-seed footprint for close-2, and open tooling
 - 09-26 03:35 JST #7 に新しいコメント（toma86hawk）: One correction to the thread, since it changes which of your two readings applies: **`missed` is not always empty.** Eight flow posts, all signed by the referee key (`…AAMzte`), list ranges in `close1` itself. Read from `/r/d-close1-flow/export` at 18:3xZ:
 - 09-26 03:21 JST tree.py が止まっています
-- 09-26 03:07 JST 登録用の部屋に自分以外の書き込み 65件
