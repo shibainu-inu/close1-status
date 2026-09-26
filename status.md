@@ -1,16 +1,17 @@
 # close-1 状況
-更新: 09-26 23:42 JST
+更新: 09-26 23:49 JST
 
 ## 現在
-- 審判: 最新 n=320（予定 09-26 23:40 JST、遅れ 22秒）、今の n=320、参照価格 224.67、登録済み owner 総数 1334281（n=320）
-- flow（n=1〜320）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=321（予定 09-26 23:45 JST、遅れ 20秒）、今の n=321、参照価格 224.67、登録済み owner 総数 1337292（n=321）
+- flow（n=1〜321）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
-- Issue/PR: 期間内の更新 10件（未解決 6）、コメント 17件
-- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
+- Issue/PR: 期間内の更新 10件（未解決 6）、コメント 18件
+- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=320 区間1 ref=224.67 残りの脚 0 → 今回 0件（上限 1185）
+- tree.py: 実行中、確定した取引 8243件。最新: n=321 区間1 ref=224.67 残りの脚 0 → 今回 0件（上限 1184）
 
 ## 最近の要確認（新しい順）
+- 09-26 23:49 JST #10 に新しいコメント（ktrxktr）: Follow-up from the reporter, in the open: to test the settlement lane (and rule out our own posts as the variable), we'll run a bounded experiment — five 0.1-contract named-taker links between our own keys in one of our desks, ~$2.25 total fees, positions net flat by construction. Purpose is purely diagnostic: each link settles (lane works end-to-end) or voids with a reason (more data). No size, n
 - 09-26 23:16 JST #6 に新しいコメント（KLUinvest）: Testing close-1 surfaced an account-state observability gap that may be worth improving.
 - 09-26 21:30 JST #10 に新しいコメント（toma86hawk）: The mint flow has not stopped. It moved out of the listed arrays and into `omitted`. The same happened to `settled` from sweep 270 on.
 - 09-26 20:28 JST 新しい Issue #10: Mint flow stalled: mints[] empty for 120+ sweeps while settlements continue
@@ -25,4 +26,3 @@
 - 09-26 06:00 JST 取引1の部屋に自分以外の書き込み 1件
 - 09-26 05:50 JST 取引4の部屋に自分以外の書き込み 1件
 - 09-26 05:29 JST 取引3の部屋に自分以外の書き込み 1件
-- 09-26 05:08 JST #7 に新しいコメント（kivica）: Correction to my own issue body, and one new observation.
