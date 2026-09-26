@@ -1,16 +1,17 @@
 # close-1 状況
-更新: 09-26 10:28 JST
+更新: 09-26 10:34 JST
 
 ## 現在
-- 審判: 最新 n=161（予定 09-26 10:25 JST、遅れ 15秒）、今の n=161、参照価格 224.50、登録済み owner 総数 855156（n=161）
-- flow（n=1〜161）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=162（予定 09-26 10:30 JST、遅れ 17秒）、今の n=162、参照価格 224.50、登録済み owner 総数 857094（n=162）
+- flow（n=1〜162）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
-- Issue/PR: 期間内の更新 9件（未解決 5）、コメント 13件
-- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
+- Issue/PR: 期間内の更新 9件（未解決 5）、コメント 14件
+- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=161 区間1 ref=224.50 残りの脚 0 → 今回 0件（上限 1186）
+- tree.py: 実行中、確定した取引 8243件。最新: n=162 区間1 ref=224.50 残りの脚 0 → 今回 0件（上限 1187）
 
 ## 最近の要確認（新しい順）
+- 09-26 10:34 JST #8 に新しいコメント（pvthr33）: Building on this issue, for close-2 (close-1's rules are frozen): the clawback makes a fee-free entry equal to the sweep's close, so any operator can pair its own keys at ref × 0.98 / × 1.02 and give hundreds of keys identical max-size entries at every sweep (tonight one room logged 200 such pair trades in 43 s). Ties share the places they span, so the top three split among hundreds of identical k
 - 09-26 07:26 JST #5 に新しいコメント（2TheMoom）: Confirmed and fixed. Reproduced the exact minimal sequence from the report against `main` (`66c1da3`): the sweep-2 trade settles and its fee shows up in `sweeps`, while the already-returned `final` block still reports `fees: 0` and zero scores for both accounts. The two halves of the output do contradict each other, exactly as described.
 - 09-26 07:23 JST flow n=74 で自分の取引が無効になっています（見えた分 1件）: [["rizzA-test-1790359503013", "limits"]]
 - 09-26 07:23 JST flow n=38 で自分の取引が無効になっています（見えた分 2件）: [["test-double-1790348891", "settled"], ["test-double-1790348891", "settled"]]
