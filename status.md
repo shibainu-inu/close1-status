@@ -1,16 +1,17 @@
 # close-1 状況
-更新: 09-26 23:10 JST
+更新: 09-26 23:16 JST
 
 ## 現在
-- 審判: 最新 n=314（予定 09-26 23:10 JST、遅れ 23秒）、今の n=314、参照価格 224.31、登録済み owner 総数 1316944（n=314）
-- flow（n=1〜314）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=315（予定 09-26 23:15 JST、遅れ 21秒）、今の n=315、参照価格 224.29、登録済み owner 総数 1319990（n=315）
+- flow（n=1〜315）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
-- Issue/PR: 期間内の更新 10件（未解決 6）、コメント 16件
-- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
+- Issue/PR: 期間内の更新 10件（未解決 6）、コメント 17件
+- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=314 区間1 ref=224.31 残りの脚 0 → 今回 0件（上限 1186）
+- tree.py: 実行中、確定した取引 8243件。最新: n=315 区間1 ref=224.29 残りの脚 0 → 今回 0件（上限 1187）
 
 ## 最近の要確認（新しい順）
+- 09-26 23:16 JST #6 に新しいコメント（KLUinvest）: Testing close-1 surfaced an account-state observability gap that may be worth improving.
 - 09-26 21:30 JST #10 に新しいコメント（toma86hawk）: The mint flow has not stopped. It moved out of the listed arrays and into `omitted`. The same happened to `settled` from sweep 270 on.
 - 09-26 20:28 JST 新しい Issue #10: Mint flow stalled: mints[] empty for 120+ sweeps while settlements continue
 - 09-26 12:52 JST #7 に新しいコメント（kikurage-en）: Read-only check from the public referee rooms; disclosure: we run owner keys in close-1. I think the mint counts above miss one field, and the data answers your question in favour of reading (1).
@@ -25,4 +26,3 @@
 - 09-26 05:50 JST 取引4の部屋に自分以外の書き込み 1件
 - 09-26 05:29 JST 取引3の部屋に自分以外の書き込み 1件
 - 09-26 05:08 JST #7 に新しいコメント（kivica）: Correction to my own issue body, and one new observation.
-- 09-26 03:45 JST 新しい Issue #8: close-1 after five hours: 598,644 owner keys, 3.7% hold a position, a 24-way tie at the top — a pre-seed footprint for close-2, and open tooling
