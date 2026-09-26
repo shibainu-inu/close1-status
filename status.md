@@ -1,14 +1,14 @@
 # close-1 状況
-更新: 09-26 08:59 JST
+更新: 09-26 09:05 JST
 
 ## 現在
-- 審判: 最新 n=143（予定 09-26 08:55 JST、遅れ 15秒）、今の n=143、参照価格 225.01、登録済み owner 総数 841939（n=143）
-- flow（n=1〜143）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=144（予定 09-26 09:00 JST、遅れ 20秒）、今の n=145、参照価格 225.07、登録済み owner 総数 842557（n=144）
+- flow（n=1〜144）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
 - Issue/PR: 期間内の更新 9件（未解決 5）、コメント 13件
-- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
+- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=143 区間1 ref=225.01 残りの脚 0 → 今回 0件（上限 1187）
+- tree.py: 実行中、確定した取引 8243件。最新: n=144 区間1 ref=225.07 残りの脚 0 → 今回 0件（上限 1186）
 
 ## 最近の要確認（新しい順）
 - 09-26 07:26 JST #5 に新しいコメント（2TheMoom）: Confirmed and fixed. Reproduced the exact minimal sequence from the report against `main` (`66c1da3`): the sweep-2 trade settles and its fee shows up in `sweeps`, while the already-returned `final` block still reports `fees: 0` and zero scores for both accounts. The two halves of the output do contradict each other, exactly as described.
