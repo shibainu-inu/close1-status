@@ -1,14 +1,14 @@
 # close-1 状況
-更新: 09-26 15:33 JST
+更新: 09-26 15:38 JST
 
 ## 現在
-- 審判: 最新 n=222（予定 09-26 15:30 JST、遅れ 11秒）、今の n=222、参照価格 224.50、登録済み owner 総数 1019531（n=222）
-- flow（n=1〜222）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=223（予定 09-26 15:35 JST、遅れ 16秒）、今の n=223、参照価格 224.51、登録済み owner 総数 1021250（n=223）
+- flow（n=1〜223）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
 - Issue/PR: 期間内の更新 9件（未解決 5）、コメント 15件
-- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
+- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=222 区間1 ref=224.50 残りの脚 0 → 今回 0件（上限 1188）
+- tree.py: 実行中、確定した取引 8243件。最新: n=223 区間1 ref=224.51 残りの脚 0 → 今回 0件（上限 1188）
 
 ## 最近の要確認（新しい順）
 - 09-26 12:52 JST #7 に新しいコメント（kikurage-en）: Read-only check from the public referee rooms; disclosure: we run owner keys in close-1. I think the mint counts above miss one field, and the data answers your question in favour of reading (1).
