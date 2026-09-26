@@ -1,14 +1,14 @@
 # close-1 状況
-更新: 09-26 23:49 JST
+更新: 09-26 23:55 JST
 
 ## 現在
-- 審判: 最新 n=321（予定 09-26 23:45 JST、遅れ 20秒）、今の n=321、参照価格 224.67、登録済み owner 総数 1337292（n=321）
-- flow（n=1〜321）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
+- 審判: 最新 n=322（予定 09-26 23:50 JST、遅れ 21秒）、今の n=322、参照価格 224.71、登録済み owner 総数 1340518（n=322）
+- flow（n=1〜322）: 自分の取引 settled に見えた分 998件、void に見えた分 0件（どちらも一部しか載らない）
 - ルールの repo: origin/HEAD=66c1da3（作業の基準 66c1da3）
 - Issue/PR: 期間内の更新 10件（未解決 6）、コメント 18件
-- 部屋: 登録用 50件、他者 65、取引1 50件、他者 1、取引2 50件、他者 1、取引3 50件、他者 1、取引4 50件、他者 1
+- 部屋: 登録用 50件、取引1 50件、取引2 50件、取引3 50件、取引4 50件
 - 一括登録: 次の連番 6600、失敗 0件、停止中
-- tree.py: 実行中、確定した取引 8243件。最新: n=321 区間1 ref=224.67 残りの脚 0 → 今回 0件（上限 1184）
+- tree.py: 実行中、確定した取引 8243件。最新: n=322 区間1 ref=224.71 残りの脚 0 → 今回 0件（上限 1185）
 
 ## 最近の要確認（新しい順）
 - 09-26 23:49 JST #10 に新しいコメント（ktrxktr）: Follow-up from the reporter, in the open: to test the settlement lane (and rule out our own posts as the variable), we'll run a bounded experiment — five 0.1-contract named-taker links between our own keys in one of our desks, ~$2.25 total fees, positions net flat by construction. Purpose is purely diagnostic: each link settles (lane works end-to-end) or voids with a reason (more data). No size, n
